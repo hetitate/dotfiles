@@ -1,0 +1,63 @@
+[theme]
+file = "/home/lemme/.config/i3/theme.toml"
+
+[icons]
+name = "none"
+[icons.overrides]
+"music" = "   "
+"music_play" = " "
+"music_pause" = " "
+"volume_full" = "   VOL "
+"volume_half" = "   VOL "
+"volume_empty" = "   VOL "
+"volume_muted" = "   MUTED "
+"net_vpn" = " WG"
+"bat" = " BAT "
+"bat_charging" = "   "
+"bat_discharging" = "   "
+"bat_empty" = "   "
+"bat_full" = "   "
+"bat_half" = "   "
+"bat_not_available" = " BAT N/A "
+"bat_quarter" = "   "
+"bat_three_quarters" = "   "
+
+[[block]]
+block = "music"
+player = "spotify"
+buttons = ["play"]
+hide_when_empty = true
+dynamic_width = true
+
+[[block]]
+block = "sound"
+max_vol = 100
+
+[[block]]
+block = "net"
+device = "wg0"
+format = "{ip}"
+interval = 3
+hide_missing = true
+
+[[block]]
+block = "memory"
+display_type = "memory"
+format_mem = "{Mug}/{MTg}G"
+clickable = false
+
+[[block]]
+block = "cpu"
+interval = 1
+format = "{utilization}% "
+
+[[block]]
+block = "battery"
+interval = 3
+format = "{percentage}% {time}"
+
+[[block]]
+block = "time"
+interval = 60
+format = "  [%u] %a %d/%m %R %p "
+timezone = "Antarctica/Vostok"

@@ -1,0 +1,17 @@
+# Dracula Color Theme
+
+idle_bg = "#282a36"
+idle_fg = "#BFBFBF"
+info_bg = "#bd93f9"
+info_fg = "#002b36"
+good_bg = "#50fa7b"
+good_fg = "#002b36"
+warning_bg = "#ffb86c"
+warning_fg = "#002b36"
+critical_bg = "#ff5555"
+critical_fg = "#002b36"
+separator = " "
+separator_bg = "auto"
+separator_fg = "auto"
+alternating_tint_bg = "#000000"
+alternating_tint_fg = "#000000"
